@@ -5,10 +5,10 @@ Automating the onboarding process 🧑‍🤝‍🧑
 * Visual Studio Code (recommended)
 * NodeJS
 
+## Installation
+For this project to work you need to install node
+
 Download node **[here](https://nodejs.org/en/download/)** and check if it's been installed in the terminal:
 ```
 node -v
 ```
-
-## Run in browser
-To run the project in the browser simply drag the index.html file to your browser and it should start
