@@ -9,3 +9,6 @@ Download node **[here](https://nodejs.org/en/download/)** and check if it's been
 ```
 node -v
 ```
+
+## Run in browser
+To run the project in the browser simply drag the index.html file to your browser and it should start
