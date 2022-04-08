@@ -12,3 +12,6 @@ Download node **[here](https://nodejs.org/en/download/)** and check if it's been
 ```
 node -v
 ```
+
+## Open in browser
+Drag the index.html file to your browser to open the portal
