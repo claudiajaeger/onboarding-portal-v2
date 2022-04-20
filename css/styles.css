@@ -20,6 +20,7 @@
     top: 0;
     height: 100%;
     background:var(--main-color);
+    z-index: 100;
 }
 
 .sidebar-brand {
@@ -65,8 +66,18 @@
 header {
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     box-shadow: 2px 2px 7px rgba(0,0,0,0.2);
+    position: fixed;
+    left: 345px;
+    width: calc(100% - 345px);
+    top: 0;
+    z-index: 100;
+}
+
+header label span {
+    font-size: 1.7rem;
+    padding-right: 1rem;
 }
 
 .search-wrapper {
@@ -100,4 +111,49 @@ header {
 .user-wrapper small {
     display:inline-block;
     color:var(--text-grey);
+}
+
+main {
+    margin-top: 85px;
+    padding: 2rem 1.5rem;
+    background: #f0f6fc;
+    min-height: calc(100vh - 90px);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    margin-top: 1rem;
+}
+
+.card-single {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 2px;
+}
+
+.card-single h3:first-child {
+    font-size: 1rem;
+}
+
+.card-single span:first-child {
+    color: var(--main-color);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.recent-grid {
+    display: grid;
+    margin-top: 3.5rem;
+    grid-template-columns: 67% auto;
+    grid-gap: 2rem;
+}
+
+.card {
+    background: #fff;
 }
