@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <input type="checkbox" id="nav-toggle">
     <div class="sidebar">
         <div class="sidebar-brand">
             <h2><span class="la la-address-book"></span> Onboarding Portal</h2>
@@ -33,7 +34,7 @@
         <header>
             <h2>
                 <div class="header-title">
-                    <label for="">
+                    <label for="nav-toggle">
                         <span class="las la-bars">
                         </span>
                     </label>
@@ -59,7 +60,7 @@
                         <h3>Team tailor</h3>
                     </div>
                     <div>
-                        <span>Yellow</span>
+                        <span class="dot yellow"></span>
                     </div>
                 </div>
                 <div class="card-single">
@@ -67,7 +68,7 @@
                         <h3>Welcome E-mail</h3>
                     </div>
                     <div>
-                        <span>Pink</span>
+                        <span class="dot pink"></span>
                     </div>
                 </div>
                 <div class="card-single">
@@ -75,7 +76,7 @@
                         <h3>User Account</h3>
                     </div>
                     <div>
-                        <span>Red</span>
+                        <span class="dot red"></span>
                     </div>
                 </div>
                 <div class="card-single">
@@ -83,7 +84,7 @@
                         <h3>Computer & ID</h3>
                     </div>
                     <div>
-                        <span>Green</span>
+                        <span class="dot green"></span>
                     </div>
                 </div>
                 <div class="card-single">
@@ -91,7 +92,7 @@
                         <h3>Additional Services</h3>
                     </div>
                     <div>
-                        <span>Blue</span>
+                        <span class="dot blue"></span>
                     </div>
                 </div>
                 <div class="card-single">
@@ -99,74 +100,126 @@
                         <h3>First day e-mail</h3>
                     </div>
                     <div>
-                        <span>Orange</span>
+                        <span class="dot orange"></span>
                     </div>
                 </div>
             </div>
             <div class="recent-grid">
                 <div class="candidates">
-                    <div class="card-header">
-                        <h3>Candidate Status</h3>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Candidate Status</h3>
+    
+                            <button>See all <span class="las la-arrow-right">
+                            </span></button>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table width="100%">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                            <td>Phase</td>
+                                            <td>Status</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Bertie Bean</td>
+                                            <td><span style="width:15px; height:15px; margin-right:0.3rem;" class="dot blue"></span> Additional Services</td>
+                                            <td>
+                                                <span class="status"></span>
+                                                Pending
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Stephen Makias</td>
+                                            <td><span style="width:15px; height:15px; margin-right:0.3rem;" class="dot pink"></span> Welcome e-mail</td>
+                                            <td>
+                                                <span class="status"></span>
+                                                Done
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Joe Doe</td>
+                                            <td><span style="width:15px; height:15px; margin-right:0.3rem;" class="dot yellow"></span> Team tailor</td>
+                                            <td>
+                                                <span class="status"></span>
+                                                In progress
+                                            </td>
+                                        </tr>
+    
+                                        <tr>
+                                            <td>Anessa Collier</td>
+                                            <td><span style="width:15px; height:15px; margin-right:0.3rem;" class="dot pink"></span> Welcome e-mail</td>
+                                            <td>
+                                                <span class="status"></span>
+                                                Pending
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Stanley McCain</td>
+                                            <td><span style="width:15px; height:15px; margin-right:0.3rem;" class="dot red"></span> User Account</td>
+                                            <td>
+                                                <span class="status"></span>
+                                                Done
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Arnold Hester</td>
+                                            <td><span style="width:15px; height:15px; margin-right:0.3rem;" class="dot green"></span> Computer & ID</td>
+                                            <td>
+                                                <span class="status"></span>
+                                                In progress
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Rahim Jaramillo</td>
+                                            <td><span style="width:15px; height:15px; margin-right:0.3rem;" class="dot blue"></span> Additional Services</td>
+                                            <td>
+                                                <span class="status"></span>
+                                                Pending
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Francesco Stamp</td>
+                                            <td><span style="width:15px; height:15px; margin-right:0.3rem;" class="dot orange"></span> First day e-mail</td>
+                                            <td>
+                                                <span class="status"></span>
+                                                Done
+                                            </td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
 
-                        <button>See all <span class="las la-arrow-right">
-                        </span></button>
-                    </div>
-                    <div class="card-body">
-                        <table width="100%">
-                            <thead>
-                                <tr>
-                                    <td>Name</td>
-                                    <td>Phase</td>
-                                    <td>Status</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Bella1</td>
-                                    <td>Blub</td>
-                                    <td>
-                                        <span class="status"></span>
-                                        Pending
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Bella2</td>
-                                    <td>Hej</td>
-                                    <td>
-                                        <span class="status"></span>
-                                        Done
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Bella3</td>
-                                    <td>Potatis</td>
-                                    <td>
-                                        <span class="status"></span>
-                                        In progress
-                                    </td>
-                                </tr>
-                                
-                            </tbody>
-                        </table>
-                    </div>
                 </div>
                 <div class="candidates">
                     <div class="card">
                         <div class="card-header">
-                            <h3>Recent candidate</h3>
-                            <button>New candidate <span class="las la-plus">
+                            <h3>New Candidates</h3>
+                            <button>Add candidate <span class="las la-plus">
                             </span></button>
                         </div>
                         <div class="card-body">
                             <div class="candidate">
-                                <div>
-                                    <h4>Bella Ella</h4>
-                                    <small>E-mail: bella@bella.se</small>
+                                <div class="info">
+                                    <div>
+                                        <h4>Name: Joe Doe</h4>
+                                        <small>E-mail: joe@doe.com</small>
+                                    </div>
                                 </div>
                             </div>
-                            <div>
-                                <span class="las la-user-circle"></span>
-                                <span class="las la-user-email"></span>
+                            <div class="candidate">
+                                <div class="info">
+                                    <div>
+                                        <h4>Anessa Collier</h4>
+                                        <small>E-mail: anessa@collier.co.uk</small>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
