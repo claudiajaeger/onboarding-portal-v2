@@ -43,12 +43,23 @@
             </h2>
             <div class="search-wrapper">
                 <span class="las la-search"></span>
-                <input type="search" placeholder="Search"/>
+                
+                <div class="dropdown">
+                    <!-- <input onClick="dropdown()" class="dropdownbar" type="search"/> -->
+                    <span class="dropdownbar" onClick="dropdown()">Search Candidate</span>
+                    <!-- <button onClick="dropdown()" class="dropdownbar">Search Candidates</button> -->
+                    <div id="myDropdown" class="dropdown-content">
+                    <a href="">Arnold Hester</a>
+                    <a href="">Francesco Stamp</a>
+                    <a href="">Gabriel Lincoln</a>
+                    </div>
+                </div>
+                
             </div>
 
             <div class="user-wrapper">
                 <div>
-                    <h4>Ebba Lindholm</h4>
+                    <h4>Laura Lindholm</h4>
                     <small>Recruiter</small>
                 </div>
             </div>
@@ -57,50 +68,80 @@
             <div class="cards">
                 <div class="card-single">
                     <div>
-                        <h3>Team tailor</h3>
+                        <span class="dot yellow"></span>
                     </div>
                     <div>
-                        <span class="dot yellow"></span>
+                        <h3>Team Tailor Process</h3>
+                    </div>
+                    <div>
+                        <span class="arrow t-tailor las la-arrow-right"></span>
                     </div>
                 </div>
                 <div class="card-single">
-                    <div>
-                        <h3>Welcome E-mail</h3>
-                    </div>
                     <div>
                         <span class="dot pink"></span>
                     </div>
+                    <div>
+                        <h3>Welcome Email</h3>
+                    </div>
+                    <div>
+                        <span class="arrow w-email las la-arrow-right"></span>
+                    </div>
                 </div>
                 <div class="card-single">
-                    <div>
-                        <h3>User Account</h3>
-                    </div>
                     <div>
                         <span class="dot red"></span>
                     </div>
-                </div>
-                <div class="card-single">
                     <div>
-                        <h3>Computer & ID</h3>
+                        <h3>User Accounts</h3>
                     </div>
                     <div>
-                        <span class="dot green"></span>
+                        <span class="arrow u-accounts las la-arrow-down"></span>
                     </div>
                 </div>
                 <div class="card-single">
+                    <div>
+                        <span class="dot orange"></span>
+                    </div>
+                    <div>
+                        <h3>First Day E-mail</h3>
+                    </div>
+                    <div>
+                        <span class="arrow f-day-email las la-arrow-down"></span>
+                    </div>
+                </div>
+                <div class="card-single">
+                    <div>
+                        <span class="dot blue"></span>
+                    </div>
                     <div>
                         <h3>Additional Services</h3>
                     </div>
                     <div>
-                        <span class="dot blue"></span>
+                        <span class="arrow a-services las la-arrow-left"></span>
                     </div>
                 </div>
                 <div class="card-single">
                     <div>
-                        <h3>First day e-mail</h3>
+                        <span class="dot green"></span>
                     </div>
                     <div>
-                        <span class="dot orange"></span>
+                        <h3>Computer and IDs</h3>
+                    </div>
+                    <div>
+                        <span class="arrow c-ids las la-arrow-left"></span>
+                    </div>
+                    
+                </div>
+                <div class="card-single">
+                    <div>
+                        <span class="dot purple"></span>
+                    </div>
+                    <div>
+                        <h3>Onboarding Email</h3>
+                    </div>
+                    <div>
+                        <span class="arrow on-email las la-check-circle"></span>
                     </div>
                 </div>
             </div>
@@ -108,7 +149,7 @@
                 <div class="candidates">
                     <div class="card">
                         <div class="card-header">
-                            <h3>Candidate Status</h3>
+                            <h3>New Candidates Status</h3>
     
                             <button>See all <span class="las la-arrow-right">
                             </span></button>
@@ -134,7 +175,7 @@
                                         </tr>
                                         <tr>
                                             <td>Stephen Makias</td>
-                                            <td><span style="width:15px; height:15px; margin-right:0.3rem;" class="dot pink"></span> Welcome e-mail</td>
+                                            <td><span style="width:15px; height:15px; margin-right:0.3rem;" class="dot pink"></span> Welcome Email</td>
                                             <td>
                                                 <span class="status"></span>
                                                 Done
@@ -142,24 +183,24 @@
                                         </tr>
                                         <tr>
                                             <td>Joe Doe</td>
-                                            <td><span style="width:15px; height:15px; margin-right:0.3rem;" class="dot yellow"></span> Team tailor</td>
-                                            <td>
-                                                <span class="status"></span>
-                                                In progress
-                                            </td>
-                                        </tr>
-    
-                                        <tr>
-                                            <td>Anessa Collier</td>
-                                            <td><span style="width:15px; height:15px; margin-right:0.3rem;" class="dot pink"></span> Welcome e-mail</td>
+                                            <td><span style="width:15px; height:15px; margin-right:0.3rem;" class="dot yellow"></span> Team Tailor Process</td>
                                             <td>
                                                 <span class="status"></span>
                                                 Pending
                                             </td>
                                         </tr>
+    
+                                        <tr>
+                                            <td>Anessa Collier</td>
+                                            <td><span style="width:15px; height:15px; margin-right:0.3rem;" class="dot pink"></span> Welcome Email</td>
+                                            <td>
+                                                <span class="status"></span>
+                                                In progress
+                                            </td>
+                                        </tr>
                                         <tr>
                                             <td>Stanley McCain</td>
-                                            <td><span style="width:15px; height:15px; margin-right:0.3rem;" class="dot red"></span> User Account</td>
+                                            <td><span style="width:15px; height:15px; margin-right:0.3rem;" class="dot purple"></span> Onboarding Email</td>
                                             <td>
                                                 <span class="status"></span>
                                                 Done
@@ -167,7 +208,7 @@
                                         </tr>
                                         <tr>
                                             <td>Arnold Hester</td>
-                                            <td><span style="width:15px; height:15px; margin-right:0.3rem;" class="dot green"></span> Computer & ID</td>
+                                            <td><span style="width:15px; height:15px; margin-right:0.3rem;" class="dot green"></span> Computer and IDs</td>
                                             <td>
                                                 <span class="status"></span>
                                                 In progress
@@ -178,12 +219,12 @@
                                             <td><span style="width:15px; height:15px; margin-right:0.3rem;" class="dot blue"></span> Additional Services</td>
                                             <td>
                                                 <span class="status"></span>
-                                                Pending
+                                                Done
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Francesco Stamp</td>
-                                            <td><span style="width:15px; height:15px; margin-right:0.3rem;" class="dot orange"></span> First day e-mail</td>
+                                            <td><span style="width:15px; height:15px; margin-right:0.3rem;" class="dot orange"></span> First Day Email</td>
                                             <td>
                                                 <span class="status"></span>
                                                 Done
@@ -200,32 +241,79 @@
                 <div class="candidates">
                     <div class="card">
                         <div class="card-header">
-                            <h3>New Candidates</h3>
-                            <button>Add candidate <span class="las la-plus">
-                            </span></button>
+                            <h3>Send Welcome Email</h3>
+                            
                         </div>
                         <div class="card-body">
                             <div class="candidate">
                                 <div class="info">
                                     <div>
-                                        <h4>Name: Joe Doe</h4>
-                                        <small>E-mail: joe@doe.com</small>
-                                    </div>
+                                        <form>
+                                            <label for="name"><h4>Name</h4></label>
+                                            <input type="text" id="name" name="name">
+                                            <br/>
+                                            <label for="email"><h4>E-mail</h4></label>
+                                            <input type="email" id="email" name="email">
+                                            <br/>
+                                            <h4 style="margin-top:0.8rem;">Candidate's Citizenship</h4>
+                                            <input type="radio" id="citizen1" name="citizen">
+                                            <label for="citizen1">Swedish Citizen</label>
+                                            <br/>
+                                            <input type="radio" id="citizen2" name="citizen">
+                                            <label for="citizen2">EU Citizen</label>
+                                            <br/>
+                                            <input type="radio" id="citizen3" name="citizen">
+                                            <label for="citizen3">Non-EU Citizen</label>
+                                            <br/>
+                                            <button onClick="myFunction()">Add candidate</button>       
+                                            <p id="save"></p>                                     
+                                        </form>
+                                    </div>                                    
                                 </div>
                             </div>
-                            <div class="candidate">
+                            <!-- <div class="candidate">
                                 <div class="info">
                                     <div>
                                         <h4>Anessa Collier</h4>
                                         <small>E-mail: anessa@collier.co.uk</small>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
             </div>
         </main>
     </div>
+    <script>
+        function myFunction() {
+            alert("Welcome email has been sent!")
+        }
+        function dropdown() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropdownbar')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+                }
+            }
+        }
+    </script>
 </body>
 </html>
+
+
+<!-- <div class="search-wrapper">
+    <span class="las la-search"></span>
+    <input onmouseover="dropdown()" class="dropdownbar" type="search" placeholder="Search Candidate"/>
+    <div id="myDropdown" class="dropdown-content">
+        <a href="">Bella Bella</a>
+        <a href="">Axel Axel</a>
+    </div>
+</div> -->
