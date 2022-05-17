@@ -320,6 +320,14 @@ td .status {
     border-radius: 50%;
 }
 
+.process-card {
+    justify-content: center;
+    display: flex;
+    margin-left: 3rem;
+    width: 110%;
+    height: 170px;
+}
+
 .card {
     background: #fff;
     border-radius: 5px;
@@ -403,6 +411,164 @@ form input {
 .dot.purple {
     background-color: rgb(145, 14, 211);
 }
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow-y: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin-left: 30rem;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    height: 300px;
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+  }
+
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -.8rem;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.progressbar-wrapper {
+    background: #fff;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.progressbar li {
+    list-style-type: none;
+    width: 20%;
+    float: left;
+    font-size: 12px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: #7d7d7d;
+}
+
+.progressbar li:before {
+    width: 60px;
+    height: 60px;
+    content: "";
+    line-height: 60px;
+    border: 2px solid #7d7d7d;
+    display: block;
+    text-align: center;
+    margin: 0 auto 3px auto;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+}
+.progressbar li:after {
+     width: 100%;
+     height: 2px;
+     content: '';
+     position: absolute;
+     background-color: #7d7d7d;
+     top: 30px;
+     left: -50%;
+     z-index: 0;
+}
+.progressbar li:first-child:after {
+     content: none;
+}
+
+.progressbar li.active {
+    color: green;
+    font-weight: bold;  
+}
+.progressbar li.active:before {
+    border-color: #55b776;
+    background: green;
+ }
+.progressbar li.active + li:after {
+    background-color: #55b776;
+}
+
+.progressbar li.active:before {
+    background: #55b776;
+    background-size: 60%;
+}
+.progressbar li::before {
+    background: #fff;
+    background-size: 60%;
+}
+
+table.status-table td {
+    border: 1px solid var(--text-grey);
+    padding: 1rem;
+}
+
+table.status-table tr th {
+    display: grid;
+    padding: 1.5rem;
+}
+
+table.status-table thead tr {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid var(--text-grey);
+}
+
+table.status-table thead tr th {
+    display: grid;
+}
+
+table.status-table {
+    margin: 1.5rem .5rem;
+}
+
+table.status-table td .la-check {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: green;
+    margin-left: .3rem;
+}
+
+button#myBtn {
+    border:none;
+    cursor: pointer;
+
+}
+
+.table-responsive button#myBtn span.la-external-link-alt {
+    font-size: 1.1rem;
+    background: #fff;
+    color: var(--main-color);
+}
+
+/* .progressbar {
+    counter-reset: step;
+}
+.progressbar li:before {
+    content: counter(step);
+    counter-increment: step; 
+} */
+
 
 @media only screen and (max-width: 1200px) {
     .sidebar {
