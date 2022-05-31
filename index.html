@@ -16,6 +16,7 @@
 </head>
 <body>
     <input type="checkbox" id="nav-toggle">
+    <!-- Sidebar left -->
     <div class="sidebar">
         <div class="sidebar-brand">
             <h2><span class="la la-address-book"></span> Onboarding Portal</h2>
@@ -34,6 +35,7 @@
             </div>
         </div>
     </div>
+    <!-- Main content for website -->
     <div class="main-content">
         <header>
             <h2>
@@ -45,6 +47,7 @@
                     Dashboard
                 </div>
             </h2>
+            <!-- Search bar -->
             <div class="search-wrapper">
                 <span class="las la-search"></span>
                 
@@ -58,7 +61,7 @@
                 </div>
                 
             </div>
-
+            <!-- User in navbar -->
             <div class="user-wrapper">
                 <div>
                     <h4>Laura Lindholm</h4>
@@ -66,12 +69,14 @@
                 </div>
             </div>
         </header>
+        <!-- Main area of main content -->
         <main>
             <div class="cards">
                 <div class="process-card">
                     <img src="images/Arrows2.svg" style="width:110%;" alt="onboarding-image">
                 </div>
             </div>
+            <!-- Stage process for candidates grid -->
             <div class="recent-grid">
                 <div class="candidates">
                     <div class="card">
@@ -87,7 +92,7 @@
                                     <thead>
                                         <tr>
                                             <td>Name</td>
-                                            <td>Phase</td>
+                                            <td>Stage</td>
                                             <td>Status</td>
                                         </tr>
                                     </thead>
@@ -313,6 +318,7 @@
                     </div>
 
                 </div>
+                <!-- Form to add candidates in main content -->
                 <div class="candidates">
                     <div class="card">
                         <div class="card-header">
@@ -330,43 +336,29 @@
                                             <label for="email"><h4>E-mail</h4></label>
                                             <input type="email" id="email" name="email">
                                             <br/>
-                                            <!-- <h4 style="margin-top:0.8rem;">Candidate's Citizenship</h4>
-                                            <input type="radio" id="citizen1" name="citizen">
-                                            <label for="citizen1">Swedish Citizen</label>
-                                            <br/>
-                                            <input type="radio" id="citizen2" name="citizen">
-                                            <label for="citizen2">EU Citizen</label>
-                                            <br/>
-                                            <input type="radio" id="citizen3" name="citizen">
-                                            <label for="citizen3">Non-EU Citizen</label>
-                                            <br/> -->
                                             <button onClick="myFunction()">Add candidate</button>       
                                             <p id="save"></p>                                     
                                         </form>
                                     </div>                                    
                                 </div>
                             </div>
-                            <!-- <div class="candidate">
-                                <div class="info">
-                                    <div>
-                                        <h4>Anessa Collier</h4>
-                                        <small>E-mail: anessa@collier.co.uk</small>
-                                    </div>
-                                </div>
-                            </div> -->
                         </div>
                     </div>
                 </div>
             </div>
         </main>
     </div>
+    <!-- JavaScript scripts -->
     <script>
+        // Function that activates alert pop-up when clicking on add candidate button
         function myFunction() {
             alert("Candidate added!")
         }
+        // Activates dropdown list when searching for candidates in search bar
         function dropdown() {
             document.getElementById("myDropdown").classList.toggle("show");
         }
+        // On click function for dropdown list
         window.onclick = function(event) {
             if (!event.target.matches('.dropdownbar')) {
                 var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -379,26 +371,26 @@
                 }
             }
         }
-        // Get the modal
+        // Get the modal pop-up for stage status for Bertie Bean
         var modal = document.getElementById("myModal");
 
-        // Get the button that opens the modal
+        // Gets the button that opens the pop-up
         var btn = document.getElementById("myBtn");
 
-        // Get the <span> element that closes the modal
+        // Get the span element that closes the pop-up
         var span = document.getElementsByClassName("close")[0];
 
-        // When the user clicks the button, open the modal 
+        // When the user clicks the button, open the pop-up function
         btn.onclick = function() {
         modal.style.display = "block";
         }
 
-        // When the user clicks on <span> (x), close the modal
+        // When the user clicks on span, close the pop-up function
         span.onclick = function() {
         modal.style.display = "none";
         }
 
-        // When the user clicks anywhere outside of the modal, close it
+        // When the user clicks anywhere outside of the pop-up, close function
         window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = "none";
@@ -407,13 +399,3 @@
     </script>
 </body>
 </html>
-
-
-<!-- <div class="search-wrapper">
-    <span class="las la-search"></span>
-    <input onmouseover="dropdown()" class="dropdownbar" type="search" placeholder="Search Candidate"/>
-    <div id="myDropdown" class="dropdown-content">
-        <a href="">Bella Bella</a>
-        <a href="">Axel Axel</a>
-    </div>
-</div> -->
