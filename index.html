@@ -49,9 +49,7 @@
                 <span class="las la-search"></span>
                 
                 <div class="dropdown">
-                    <!-- <input onClick="dropdown()" class="dropdownbar" type="search"/> -->
                     <span class="dropdownbar" onClick="dropdown()">Search Candidate</span>
-                    <!-- <button onClick="dropdown()" class="dropdownbar">Search Candidates</button> -->
                     <div id="myDropdown" class="dropdown-content">
                     <a href="">Arnold Hester</a>
                     <a href="">Francesco Stamp</a>
@@ -71,86 +69,8 @@
         <main>
             <div class="cards">
                 <div class="process-card">
-                    <img src="images/Arrows.svg" alt="onboarding-image">
+                    <img src="images/Arrows2.svg" style="width:110%;" alt="onboarding-image">
                 </div>
-                <!-- <div class="card-single">
-                    <div>
-                        <span class="dot yellow"></span>
-                    </div>
-                    <div>
-                        <h3>Team Tailor Process</h3>
-                    </div>
-                    <div>
-                        <span class="arrow t-tailor las la-arrow-right"></span>
-                    </div>
-                </div>
-                <div class="card-single">
-                    <div>
-                        <span class="dot pink"></span>
-                    </div>
-                    <div>
-                        <h3>Welcome Email</h3>
-                    </div>
-                    <div>
-                        <span class="arrow w-email las la-arrow-right"></span>
-                    </div>
-                </div>
-                <div class="card-single">
-                    <div>
-                        <span class="dot red"></span>
-                    </div>
-                    <div>
-                        <h3>User Accounts</h3>
-                    </div>
-                    <div>
-                        <span class="arrow u-accounts las la-arrow-down"></span>
-                    </div>
-                </div>
-                <div class="card-single">
-                    <div>
-                        <span class="dot orange"></span>
-                    </div>
-                    <div>
-                        <h3>First Day E-mail</h3>
-                    </div>
-                    <div>
-                        <span class="arrow f-day-email las la-arrow-down"></span>
-                    </div>
-                </div>
-                <div class="card-single">
-                    <div>
-                        <span class="dot blue"></span>
-                    </div>
-                    <div>
-                        <h3>Additional Services</h3>
-                    </div>
-                    <div>
-                        <span class="arrow a-services las la-arrow-left"></span>
-                    </div>
-                </div>
-                <div class="card-single">
-                    <div>
-                        <span class="dot green"></span>
-                    </div>
-                    <div>
-                        <h3>Computer and IDs</h3>
-                    </div>
-                    <div>
-                        <span class="arrow c-ids las la-arrow-left"></span>
-                    </div>
-                    
-                </div>
-                <div class="card-single">
-                    <div>
-                        <span class="dot purple"></span>
-                    </div>
-                    <div>
-                        <h3>Onboarding Email</h3>
-                    </div>
-                    <div>
-                        <span class="arrow on-email las la-check-circle"></span>
-                    </div>
-                </div> -->
             </div>
             <div class="recent-grid">
                 <div class="candidates">
@@ -190,94 +110,145 @@
                                                     <tbody>
                                                         <tr>
                                                             <th scope="row">Team Tailor</th>
-                                                            <td>Testtest <span class="las la-check"></span></td>
-                                                            <td>Testeetijseiotj <span class="las la-check"></span></td>
-                                                            <td>Blublub <span class="las la-check"></span></td>
+                                                            <td style="background:green; color:white;">Position Offered</td>
+                                                            <td style="background:green; color: white;">Personal Information</td>
+                                                            <td style="background:green; color:white;">Contract Signing</td>
+                                                            <td style="background:green; color:white;">Hired</td>
                                                             <td style="border:none;"><span class="las la-check"></span></td>
                                                         </tr>
                                                         <tr>
                                                             <th scope="row">Welcome Email</th>
-                                                            <td>Citizenship</td>
-                                                            <td>Language</td>
-                                                            <td>Email Sent</td>
+                                                            <td>Citizenship:
+                                                                <br/>
+                                                                <input type="radio" id="citizen1" name="citizen">
+                                                                <label for="citizen1">Swedish Citizen</label>
+                                                                <br/>
+                                                                <input type="radio" id="citizen2" name="citizen">
+                                                                <label for="citizen2">EU Citizen</label>
+                                                                <br/>
+                                                                <input type="radio" id="citizen3" name="citizen">
+                                                                <label for="citizen3">Non-EU Citizen</label>
+                                                                <br/>
+                                                                <button id="save-btn">Save</button>
+                                                            </td>
+                                                            <td>Language:
+                                                                <br/>
+                                                                <input type="radio" id="english" name="language">
+                                                                <label for="english">English</label>
+                                                                <br/>
+                                                                <input type="radio" id="swedish" name="language">
+                                                                <label for="swedish">Swedish</label>
+                                                                <br/>
+                                                                <button id="save-btn">Save</button>
+                                                            </td>
+                                                            <td>Email Sent
+                                                                <input type="checkbox" name="welcomeemail" checked>
+                                                            </td>
+                                                            <td style="border:none;"><span class="las la-check"></span></td>
                                                         </tr>
                                                         <tr>
-                                                            <th scope="row">User Account</th>
-                                                            <td>SSAP</td>
-                                                            <td>Foodora</td>
-                                                            <td>Lorem Ipsum</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">First Day Email</th>
-                                                            <td>Lorem Ipsum1</td>
-                                                            <td>Lorem Ipsum2</td>
-                                                            <td>Lorem Ipsum3</td>
-                                                            <td>Lorem Ipsum4</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">Additional Services</th>
-                                                            <td>Hello1</td>
-                                                            <td>Hello2</td>
-                                                            <td>Hello3</td>
-                                                            <td>Hello4</td>
+                                                            <th scope="row">User Accounts</th>
+                                                            <td>Knowit
+                                                                <input type="checkbox" name="knowit">
+                                                            </td>
+                                                            <td>Cybercom
+                                                                <input type="checkbox" name="cybercom">
+                                                            </td>
+                                                            <td>MS Teams
+                                                                <input type="checkbox" name="msteams">
+                                                            </td>
+                                                            <td>Inform ScM in Team
+                                                                <input type="checkbox" name="scm">
+                                                            </td>
+                                                            <td>Request Buddy
+                                                                <input type="checkbox" name="requestbuddy">
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <th scope="row">Computer & IDs</th>
-                                                            <td>Computer</td>
-                                                            <td>ID</td>
-                                                            <td>Access</td
+                                                            <td>Computer Account
+                                                                <input type="checkbox" name="computeraccount">
+                                                            </td>
+                                                            <td>ID Access Picture
+                                                                <input type="checkbox" name="idaccess">
+                                                            </td>
+                                                            <td>Forward Picture to Sveavägen
+                                                                <input type="checkbox" name="forwardpicture">
+                                                            </td>
+                                                            <td>Update Mailing Lists
+                                                                <input type="checkbox" name="updatemailinglist">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Additional Services</th>
+                                                            <td>Ericsson
+                                                                <input type="checkbox" name="additionalservices1">
+                                                            </td>
+                                                            <td>Foodora
+                                                                <input type="checkbox" name="additionalservices2">
+                                                            </td>
+                                                            <td>Jira
+                                                                <input type="checkbox" name="additionalservices3">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">First Day Email</th>
+                                                            <td>Schedule First Day
+                                                                <input type="checkbox" name="schedulefirstday">
+                                                            </td>
+                                                            <td>Email Sent
+                                                                <input type="checkbox" name="firstdayemail">
+                                                            </td>
+                                                            <td>Have First Day
+                                                                <input type="checkbox" name="firstday">
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <th scope="row">Onboarding Email</th>
-                                                            <td>Onboarding Email</td>
-                                                            <td>Onboarding Email2</td>
-                                                            <td>Onboarding Email3</td>
+                                                            <td>Language:
+                                                                <br/>
+                                                                <input type="radio" id="english" name="language">
+                                                                <label for="english">English</label>
+                                                                <br/>
+                                                                <input type="radio" id="swedish" name="language">
+                                                                <label for="swedish">Swedish</label>
+                                                                <br/>
+                                                                <button id="save-btn">Save</button>
+                                                            </td>
+                                                            <td>Email Sent
+                                                                <input type="checkbox" name="onboardingemail">
+                                                            </td>
                                                         </tr>
                                                         
 
-                                                    </tbody>
-                                                    <!-- <tr>Phases</tr>
-                                                    <td>Team Tailor</td>
-                                                    <td>Welcome Email</td>
-                                                    <td>User Account</td>
-                                                    <td>First Day Email</td>
-                                                    <td>Additional Services</td>
-                                                    <td>Computer & IDs</td>
-                                                    <td>Onboarding Email</td> -->
-                                                    
+                                                    </tbody>                                                    
                                                 </table>
                                                 
                                             </div>
-
-                                            <!-- <div class="progressbar-wrapper">
-                                                <ul class="progressbar">
-                                                    <li class="active">Step 1</li>
-                                                    <li class="active">Step 2</li>
-                                                    <li class="active">Step 3</li>
-                                                    <li class="active">Step 4</li>
-                                                </ul>
-                                            </div> -->
-
                                             </div>
                                             </td>
                                             
-                                            <td><span style="width:15px; height:15px; margin-right:0.3rem;" class="dot blue"></span> Additional Services</td>
-                                            <td>
-                                                <span class="status"></span>
-                                                Pending
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Stephen Makias</td>
-                                            <td><span style="width:15px; height:15px; margin-right:0.3rem;" class="dot pink"></span> Welcome Email</td>
+                                            <td><span style="width:15px; height:15px; margin-right:0.3rem;" class="dot orange"></span> Welcome Email</td>
                                             <td>
                                                 <span class="status"></span>
                                                 Done
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>Joe Doe</td>
-                                            <td><span style="width:15px; height:15px; margin-right:0.3rem;" class="dot yellow"></span> Team Tailor Process</td>
+                                            <td>Stephen Makias
+                                                <button id="myBtn"><span class="las la-external-link-alt"></span></button>
+                                            </td>
+                                            <td><span style="width:15px; height:15px; margin-right:0.3rem;" class="dot purple"></span> Additional Services</td>
+                                            <td>
+                                                <span class="status"></span>
+                                                In progress
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Joe Doe
+                                                <button id="myBtn"><span class="las la-external-link-alt"></span></button>
+                                            </td>
+                                            <td><span style="width:15px; height:15px; margin-right:0.3rem;" class="dot yellow"></span> Team Tailor</td>
                                             <td>
                                                 <span class="status"></span>
                                                 Pending
@@ -285,40 +256,50 @@
                                         </tr>
     
                                         <tr>
-                                            <td>Anessa Collier</td>
-                                            <td><span style="width:15px; height:15px; margin-right:0.3rem;" class="dot pink"></span> Welcome Email</td>
+                                            <td>Anessa Collier
+                                                <button id="myBtn"><span class="las la-external-link-alt"></span></button>
+                                            </td>
+                                            <td><span style="width:15px; height:15px; margin-right:0.3rem;" class="dot orange"></span> Welcome Email</td>
                                             <td>
                                                 <span class="status"></span>
                                                 In progress
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>Stanley McCain</td>
-                                            <td><span style="width:15px; height:15px; margin-right:0.3rem;" class="dot purple"></span> Onboarding Email</td>
+                                            <td>Stanley McCain
+                                                <button id="myBtn"><span class="las la-external-link-alt"></span></button>
+                                            </td>
+                                            <td><span style="width:15px; height:15px; margin-right:0.3rem;" class="dot green"></span> Onboarding Email</td>
                                             <td>
                                                 <span class="status"></span>
                                                 Done
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>Arnold Hester</td>
-                                            <td><span style="width:15px; height:15px; margin-right:0.3rem;" class="dot green"></span> Computer and IDs</td>
+                                            <td>Arnold Hester
+                                                <button id="myBtn"><span class="las la-external-link-alt"></span></button>
+                                            </td>
+                                            <td><span style="width:15px; height:15px; margin-right:0.3rem;" class="dot pink"></span> Computer and IDs</td>
                                             <td>
                                                 <span class="status"></span>
                                                 In progress
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>Rahim Jaramillo</td>
-                                            <td><span style="width:15px; height:15px; margin-right:0.3rem;" class="dot blue"></span> Additional Services</td>
+                                            <td>Rahim Jaramillo
+                                                <button id="myBtn"><span class="las la-external-link-alt"></span></button>
+                                            </td>
+                                            <td><span style="width:15px; height:15px; margin-right:0.3rem;" class="dot purple"></span> Additional Services</td>
                                             <td>
                                                 <span class="status"></span>
                                                 Done
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>Francesco Stamp</td>
-                                            <td><span style="width:15px; height:15px; margin-right:0.3rem;" class="dot orange"></span> First Day Email</td>
+                                            <td>Francesco Stamp
+                                                <button id="myBtn"><span class="las la-external-link-alt"></span></button>
+                                            </td>
+                                            <td><span style="width:15px; height:15px; margin-right:0.3rem;" class="dot blue"></span> First Day Email</td>
                                             <td>
                                                 <span class="status"></span>
                                                 Done
